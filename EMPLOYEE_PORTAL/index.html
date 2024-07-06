@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>HR Portal</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./image/icon.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #CEEFF2;
+        }
+        header,footer{
+            background-color: #517c80; 
+            color: aliceblue; 
+            text-align: center; 
+            padding: 2px;
+        }
+        .navitem{
+           display: inline; 
+           padding: 15px;
+        }
+        .navitem a {
+            text-decoration: none;
+            color:rgb(226,240,253);
+        }
+        .registerform{
+           width: max-content;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .employeetable{
+           text-align: center; 
+        }
+        table{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse:collapse ;
+        }
+        th,td{
+            padding: 8px;
+            border: 1px solid #517c80 ;
+        }
+        .contactus{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Welcome to Company HR Portal</h1>
+    <nav>
+    <ul>
+        <li class="navitem"><a href="#employee-resistration">Employee Resistration</a></li>
+        <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+        <li class="navitem"><a href="#contact-us">Contact us</a></li>
+    </ul>
+</nav>
+   </header> 
+   <img src="./image/c.png" height="200" width="100%">
+   <section id="employee-resistration" class="registerform">
+    <h2>Employee Resistration</h2>
+    <p>Fill the below form to resistor as <em>employee:</em></p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="email">Emal id:</label>
+        <input type="email" id="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age"><br><br>
+        <label for="role">Select Role:</label>
+        <select>
+            <option >Software Engineer</option>
+            <option >Product Manager</option>
+            <option >Designer</option>
+            <option >HR Representative</option>
+        </select><br><br>
+        <label for="joiningdate">Select joining date</label>
+        <input type="date" id="joiningdate"><br><br>
+        <input type="submit">
+    </form>
+   </section>
+   <section id="employee-directory"class="employeetable">
+    <h2>Employee Directory</h2>
+    <p>List of all resistered employee</p>
+    <table>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Role</th>
+        </tr>
+        <tr>
+            <td>235</td>
+            <td>Ambar kumar</td>
+            <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>230</td>
+            <td>Garima Goyal</td>
+            <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>248</td>
+            <td>Naina Bharti</td>
+            <td>Product Manager</td>
+        </tr>
+        <tr>
+            <td>267</td>
+            <td>Aman Bansal</td>
+            <td>HR Representative</td>
+        </tr>
+    </table>
+   </section>
+   <section id="contact-us" class="contactus">
+    <h2>Contact us</h2>
+    <p>you can contact us at abc@official.com or visit us between 9AM - 6PM</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.157603855731!2d92.78983245696782!3d24.757638699867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374e49dcb63bae9b%3A0x81efa836714a289b!2sNational%20Institute%20of%20Technology%2C%20Silchar!5e0!3m2!1sen!2sin!4v1720249847892!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <footer>
+    <p>&copy:2024 abc pvt.ltd</p>
+   </footer>
+</body>
+</html>
